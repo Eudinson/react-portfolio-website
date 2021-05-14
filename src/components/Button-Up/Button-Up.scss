@@ -1,0 +1,83 @@
+
+    .btn-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        background: #24C6DC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 90%;
+        right: 1%;
+        z-index: 6;
+        border-radius: 100px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(0,0,0,.2);
+        font-weight: bolder;
+        animation: shake 4s infinite ease-out;
+
+        span{
+            color: white;
+            font-size: .8rem;
+        }
+    }
+
+    @keyframes shake {
+        0%{
+            transform: translateX(3px);
+        }
+
+        3%{
+            transform: translateX(-3px);
+
+        }
+
+        4%{
+            transform: translateX(3px);
+
+        }
+
+        5%{
+            transform: translateX(-3px);
+
+        }
+
+        10%{
+            transform: translateX(3px);
+
+        }
+
+        15%{
+            transform: translateX(-3px);
+
+        }
+
+        20%{
+            transform: translateX(3px);
+
+        }
+
+        30%{
+            transform: translateX(-5px);
+
+        }
+
+        50%{
+            transform: translateX(5px);
+
+        }
+
+        70%{
+            transform: translateX(-5px);
+
+        }
+
+        100%{
+            transform: translateX(0);
+
+        }
+    }

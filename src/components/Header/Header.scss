@@ -1,0 +1,143 @@
+
+$breakpoint-tablet: 1024px;
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 60px;
+    user-select: none;
+    letter-spacing: 2px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(245, 252, 255);
+    z-index: 5;
+
+
+    .logo{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav{
+        font-size: .9rem;
+        margin: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+
+        &::after{
+            content: '';
+            width: 0;
+            height: .9px;
+            background-color: rgba(0,0,0,1);
+            position: absolute;
+            left: 0;
+            top: 115%;
+            transition: all .2s ease;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+    }
+
+    .burger-container{
+        border-radius: 100px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .line{
+        margin: 4px;
+        transition: all .3s ease;
+        border-radius: 10px;
+    }
+
+    .line-1{
+        height: 2px;
+        width: 13px;
+        background-color: black;
+    }
+
+    .line-2{
+        height: 2px;
+        width: 25px;
+        background-color: black;
+    }
+
+    .line-3{
+        height: 2px;
+        width: 13px;
+        background-color: black;
+        position: relative;
+        left: 12px;
+    }
+
+    .line-1-animation{
+        transform: rotate(45deg) translate(3px);
+    }
+
+    .line-2-animation{
+        transform: rotate(-45deg);
+    }
+
+    .line-3-animation{
+        transform: rotate(45deg) translate(-2px);
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+    .header{
+        
+        padding-left: 20px;
+
+        .logo{
+            font-size: 1rem;
+        }
+
+        .burger-container{
+            display: flex;
+            position: fixed;
+            right: 20px;
+            z-index: 5;
+        }
+
+        .nav-container{
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            transition: all .3s ease;
+        }
+
+        .nav-container-animation{
+            transform: translateX(-100%);
+        }
+
+        .nav{
+            display: block;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
