@@ -4,7 +4,7 @@ import './Header.scss';
 
 const Header = () => {
 
-    const [burgerState, setBurgerState] = useState(false);
+    const [burgerState, setBurgerState] = useState(false)
 
     const toggleNav = () => {
         setBurgerState(state => !state)
@@ -25,18 +25,17 @@ const Header = () => {
     const navContainerToggleClass = () => {
         return burgerState ? "nav-container" : "nav-container nav-container-animation"
     }
-
-
+ 
     return(
         <div className="header">
             <div className="logo-container">
-                <Link to='/'> 
+                {/* <Link to='/'> 
                     <h1 className="logo">I am Eudin</h1>
-                </Link>
+                </Link> */}
             </div>
-            <div className={ navContainerToggleClass() }>
+            <div className={ navContainerToggleClass() } >
                 <Link to='/'>
-                    <label className="nav" onClick={ toggleNav }>Home</label>
+                    <label className='nav' onClick={ toggleNav }>Home</label>
                 </Link>
                 <Link to='/about'>
                     <label className="nav" onClick={ toggleNav }>About</label>

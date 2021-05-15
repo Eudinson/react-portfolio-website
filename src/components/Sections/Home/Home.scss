@@ -1,0 +1,91 @@
+.home-container {
+    text-align: center;
+
+        .heading-container {
+            padding-top: 60px;
+        padding-bottom: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            min-height: 100vh;
+
+            .heading-1, 
+            .heading-2 {
+                font-size: 8rem;
+                font-weight: 900;
+                line-height: 8rem;
+                background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .sub-heading-1, 
+            .sub-heading-2{
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 3px;
+                background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .sub-heading-1{
+                animation: showFade .6s ease-out;
+            }
+
+            .heading-1, 
+            .heading-2,
+            .sub-heading-2{
+                transition: all .5s ease-out;
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .hide{
+                opacity: 0;
+                transform: translateY(15px);
+            }
+        }
+}
+
+@keyframes showFade {
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:900px){
+    .home-container{
+        .heading-container{
+
+            .heading-1, 
+            .heading-2{
+                font-size: 4rem;
+                line-height: 5rem;
+                background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .sub-heading-1, 
+            .sub-heading-2{
+                font-size: 1rem;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                
+            }
+        }
+    }
+}

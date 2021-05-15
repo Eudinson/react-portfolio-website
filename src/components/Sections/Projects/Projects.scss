@@ -1,0 +1,144 @@
+.projects-container{
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 1rem;
+    padding-left: 2%;
+
+    .projects-heading{
+        font-size: 5rem;
+        font-weight: 900;
+        background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: showFade 1s ease-out;
+    }
+
+    .projects{
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        transition: .3s ease-out;
+        transform: translateY(0);
+        opacity: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+        .projects-detail-container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            .project-title{
+                background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 900;
+                font-size: 1.6rem;
+            }
+
+            .project-subtitle{
+                color: #424949;
+                font-size: 1.2rem;
+            }
+
+            .project-description,
+            .project-technology{
+                color: #424949;
+                font-size: 1rem;
+            }
+
+            .project-url-btn{
+                margin-top: 20px;
+                background: #2193b0;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #fff;
+                width: 70%;
+                padding: 5px 10px;
+                border-radius: 5px;
+                text-align: center;
+
+                &:hover{
+                    background: #2193b0;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
+            }
+        }
+
+        .projects-img-container{
+
+            .tilt{
+
+                .project-img{
+                    width: 100%;
+
+                    &:hover{
+                        box-shadow: 0 0 10px rgba(0,0,0,.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .hide{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+
+@media(max-width:900px){
+
+    .projects-container{
+
+        .projects-heading{
+            font-size: 3rem;
+        }
+
+        .projects{
+
+            .projects-detail-container{
+
+                .project-title{
+                    background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 900;
+                    font-size: 1.3rem;
+                }
+
+                .project-subtitle{
+                    color: #424949;
+                    font-size: 1rem;
+                }
+    
+                .project-description,
+                .project-technology{
+                    color: #424949;
+                    font-size: .9rem;
+                }
+
+                .project-url-btn{
+                    width: 100%;
+                }
+            }
+
+            .projects-img-container{
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+
+@media(max-width:500px){
+
+    .projects-container{
+        .projects{
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+}

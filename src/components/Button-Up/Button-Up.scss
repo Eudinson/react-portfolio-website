@@ -16,68 +16,23 @@
         width: 40px;
         cursor: pointer;
         border: 2px solid white;
-        box-shadow: 0 0 5px rgba(0,0,0,.2);
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
         font-weight: bolder;
-        animation: shake 4s infinite ease-out;
 
         span{
             color: white;
             font-size: .8rem;
+            animation: up 1s infinite ease-out;
         }
     }
 
-    @keyframes shake {
+    @keyframes up {
         0%{
-            transform: translateX(3px);
+            transform: translateY(3px);
         }
 
-        3%{
-            transform: translateX(-3px);
-
-        }
-
-        4%{
-            transform: translateX(3px);
-
-        }
-
-        5%{
-            transform: translateX(-3px);
-
-        }
-
-        10%{
-            transform: translateX(3px);
-
-        }
-
-        15%{
-            transform: translateX(-3px);
-
-        }
-
-        20%{
-            transform: translateX(3px);
-
-        }
-
-        30%{
-            transform: translateX(-5px);
-
-        }
-
-        50%{
-            transform: translateX(5px);
-
-        }
-
-        70%{
-            transform: translateX(-5px);
-
-        }
-
+        
         100%{
-            transform: translateX(0);
-
+            transform: translateY(-3px);
         }
     }
