@@ -38,7 +38,7 @@ const Contact = () => {
         await emailjs.sendForm(ids.serviceId, ids.templateId, e.target, ids.userID)
         .then(response => {
             
-            response.text === 'OK' && setStatus(message => message = "Message sent, thank you for getting in touch.")
+            response.text === 'OK' && setStatus(message => message = "Message sent, thank you for getting in touch, I will get back to you shortly.")
             e.target.reset()
 
         }).catch(error => {
@@ -68,13 +68,11 @@ const Contact = () => {
 
                     Email:
                     <input type="email" name="email" required className="name" />
-                    
+
                     Message:
                     <textarea name="message" id="" cols="30" rows="10" required className="message"></textarea>
 
-                    {
-                     status && <span className="form-message">{ status }</span > 
-                    }
+                    <span className="form-message">{ status }</span > 
                     
                     <button className="btn-send">Send message</button>
                    
