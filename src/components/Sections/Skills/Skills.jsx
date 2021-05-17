@@ -33,7 +33,7 @@ const Skills = () => {
                 <br />
 
                 <h2 className="skills-title">Other Tech Skills</h2>
-                <p className="skills-content">Git, CMS WordPress, Web Hosting, Website Migration, WHM, Cpanel, SEO</p>
+                <p className="skills-content">RESTful API, Git, CMS WordPress, Web Hosting, Website Migration, WHM, Cpanel, SEO</p>
 
                 <br />
 

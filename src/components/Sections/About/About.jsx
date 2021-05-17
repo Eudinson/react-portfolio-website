@@ -46,7 +46,7 @@ const About = () => {
             <h1 className="about-heading" onAnimationEnd={animationDidEnd}>About</h1>
 
             <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I build dynamic and responsive websites that helps buisness grow their market profit online, create beautiful logos,
+                I build dynamic and responsive websites that helps business grow their market profit online, create beautiful logos,
                 edit photos and videos, passionate in learning the latest technologies,
                 and loves drinking coffee ☕.</p>
             <br />
@@ -63,9 +63,9 @@ const About = () => {
             <br />
 
             {
-                companies.map(({companyName, companyAddress, position, employmentDate}) => {
+                companies.map(({companyName, companyAddress, position, employmentDate}, index) => {
                     return(
-                        <div className={transitionEnd2 ? "companies-container" : "hide companies-container" }>
+                        <div key={index} className={transitionEnd2 ? "companies-container" : "hide companies-container" }>
                 
                             <p className="about-companies-content"><b>{companyName}</b></p>
                             <p className="about-companies-content">{companyAddress}</p>

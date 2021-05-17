@@ -4,7 +4,8 @@ import './PageNotFound.scss';
 const PageNotFound = () => {
 
     return(
-        <div className='section'>
+        <div className='page-not-found-container'>
+            <h1>What are you looking for?</h1>
         </div>
     )
 }

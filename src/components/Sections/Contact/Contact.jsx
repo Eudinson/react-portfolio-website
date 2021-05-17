@@ -18,7 +18,8 @@ const Contact = () => {
 
     const [animationEnd, setAnimationEnd] = useState(false)
     const [transitionEnd, setTransitionEnd] = useState(false)
-    const [messageSent, setMessageSent] = useState('');
+
+    const [status, setStatus] = useState('');
 
     const animationDidEnd = () => {
         setAnimationEnd(state => state = true)
@@ -30,20 +31,23 @@ const Contact = () => {
 
     const sendEmail = async (e) => {
 
+        setStatus(message => message = "Sending message...")
+
         e.preventDefault();
 
         await emailjs.sendForm(ids.serviceId, ids.templateId, e.target, ids.userID)
-        .then((result) => {
+        .then(response => {
             
-            console.log(result.text);
-            setMessageSent(message => message = 'Message was successfully sent.')
+            response.text === 'OK' && setStatus(message => message = "Message sent, thank you for getting in touch.")
+            e.target.reset()
 
-        }, (error) => {
-            console.log(error.text);
-        });
+        }).catch(error => {
+            error.text === "" && setStatus(message => message = "Oops something went wrong, check your network connection or try sending your message again later.")
+        })
 
-        e.target.reset()
     }
+
+
 
     return (
         <div className='contact-container'>
@@ -58,19 +62,28 @@ const Contact = () => {
             <div className={transitionEnd ? "form-container" : "hide form-container"}>
 
                 <form action="" className="form" onSubmit={sendEmail}>
+
                     Name:
                     <input type="text" name="name" required className="email" />
+
                     Email:
                     <input type="email" name="email" required className="name" />
-                    Message
+                    
+                    Message:
                     <textarea name="message" id="" cols="30" rows="10" required className="message"></textarea>
+
+                    {
+                     status && <span className="form-message">{ status }</span > 
+                    }
+                    
                     <button className="btn-send">Send message</button>
+                   
                 </form>
 
-                <p className="contact-content">Connect with with on 
-
+                <p className="contact-content"><b>Connect with me on:</b> 
+                
                 <br />
-
+                
                 <a href="https://github.com/Eudinson" target="_blank" rel="noreferrer"><img src={githubImg} alt="github"/></a>
                 <a href="https://www.linkedin.com/in/eudinson-uy-6970a1128/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="linkedin"/></a>
                 

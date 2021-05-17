@@ -29,9 +29,9 @@ const Header = () => {
     return(
         <div className="header">
             <div className="logo-container">
-                {/* <Link to='/'> 
+                <Link to='/'> 
                     <h1 className="logo">I am Eudin</h1>
-                </Link> */}
+                </Link>
             </div>
             <div className={ navContainerToggleClass() } >
                 <Link to='/'>
