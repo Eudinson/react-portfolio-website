@@ -5,4 +5,28 @@
     padding-bottom: 60px;
     padding-right: 1rem;
     padding-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .page-not-found-heading{
+        font-size: 3rem;
+        font-weight: 900;
+        background: -webkit-linear-gradient(#1B4F72, #8ed2ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: showFade 1s ease-out;
+    }
+}
+
+
+@media(max-width:900px){
+
+    .page-not-found-container{
+
+        .page-not-found-heading{
+            font-size: 2rem;
+        }
+    }
 }

@@ -5,7 +5,7 @@ const PageNotFound = () => {
 
     return(
         <div className='page-not-found-container'>
-            <h1>What are you looking for?</h1>
+            <h1 className="page-not-found-heading">Sorry, I can't find what your looking for...</h1>
         </div>
     )
 }
