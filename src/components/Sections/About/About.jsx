@@ -46,19 +46,13 @@ const About = () => {
             <h1 className="about-heading" onAnimationEnd={animationDidEnd}>About</h1>
 
             <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I am a full stack web application developer.
+                I am a full stack web application developer and
             </p>
             <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I build awesome web application.
+                passionate in learning new technologies.
             </p>
             <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I can also create beautiful logos.
-            </p>
-            <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I am passionate in learning new technologies.
-            </p>
-            <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I love coffee ☕.
+                Most of all, I love coffee ☕.
             </p>
             <br />
 

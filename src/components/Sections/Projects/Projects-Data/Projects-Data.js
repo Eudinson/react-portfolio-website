@@ -8,9 +8,13 @@ const imgs = {
     mittalFacility: require('../Projects-Images/mittal_facility.jpg').default,
     agathaChic: require('../Projects-Images/agatha_chic.jpg').default,
     mittalContracting: require('../Projects-Images/mittal_contracting.jpg').default,
+    todoApp: require('../Projects-Images/todo.png').default,
     bibleQuickSearch: require('../Projects-Images/bible_quick_search.jpg').default,
     bibleQuizGame: require('../Projects-Images/bible_quiz_game.png').default,
-    faceDetectionApp: require('../Projects-Images/face_detection_app.jpg').default
+    faceDetectionApp: require('../Projects-Images/face_detection_app.jpg').default,
+    financial: require('../Projects-Images/fms.jpg').default,
+    hostel: require('../Projects-Images/hms.jpg').default,
+    login: require('../Projects-Images/login.jpg').default,
 }
 
 
@@ -21,7 +25,10 @@ export const projectsData = [
         websiteUrl: '',
         img: imgs.f3Offshore,
         technology: 'Material-UI, ReactJs, Redux, NodeJs, ExpressJs, PostgreSQL',
-        description: `This project is still under development`,
+        description: `Store, edit, update, delete millions of vessel informations. 
+        Data can be customized which one you want to be exported to PDF. 
+        Multiple users can manipulate the data with live update. 
+        Vessel short listing by user and more features.`,
         integration: 'Cloudinary',
         status: 'Under Development'
     },
@@ -31,8 +38,8 @@ export const projectsData = [
         websiteUrl: 'https://demo-shop-by-eudin.netlify.app/',
         img: imgs.demoShop,
         technology: 'ReactJs, Redux, Scss, Firebase',
-        description: 'Ecommerce website with firebase integration for user and password authentication and validation, stripe checkout payment integration test mode.',
-        integration: 'Stripe',
+        description: `Ecommerce website with add to cart, checkout, user sign-in and sign-up.`,
+        integration: 'Stripe Checkout, Google account sign-in',
         status: 'Completed'
     },
     {
@@ -41,7 +48,7 @@ export const projectsData = [
         websiteUrl: 'https://corner2corner.ae/',
         img: imgs.corner2corner,
         technology: 'WordPress, Elementor',
-        description: 'Cleaning company website with whatsapp live chat support.',
+        description: 'Cleaning company website with contact form.',
         integration: 'Whatsapp Live Chat',
         status: 'Completed'
     },
@@ -51,7 +58,7 @@ export const projectsData = [
         websiteUrl: 'https://findway.nuvola.co.il/',
         img: imgs.findwayNuvola,
         technology: 'WordPress, Elementor',
-        description: 'Implementation of a single page website with custom design from figma for software company.',
+        description: 'Implementation of a single page website with custom design from figma.',
         integration: '',
         status: 'Completed'
     },
@@ -61,7 +68,7 @@ export const projectsData = [
         websiteUrl: 'https://plmaze.com/',
         img: imgs.plmaze,
         technology: 'WordPress, Elementor',
-        description: 'Custom design single page website with mailchimp integration.',
+        description: 'Custom design semi-eccommerce single page website with contact form..',
         integration: 'Mailchimp Integration',
         status: 'Completed'
     },
@@ -71,7 +78,7 @@ export const projectsData = [
         websiteUrl: 'https://www.mittalfacility.com/',
         img: imgs.mittalFacility,
         technology: 'WordPress',
-        description: 'Facility management website with live chat support and dedicated contact forms for regular clients.',
+        description: 'Facility management website with contact form.',
         integration: 'Live Chat',
         status: 'Completed'
     },
@@ -97,26 +104,36 @@ export const projectsData = [
     },
     {
         id: 8,
-        websiteName: 'Bible Quick Search',
-        websiteUrl: 'https://eudinson.github.io/quick-search-bible/',
-        img: imgs.bibleQuickSearch,
-        technology: 'HTML, CSS, Javascript, REST Api',
-        description: 'Personal project. Simple web app for searching Bible passages. Single version only.',
-        integration: '',
-        status: 'Under Development'
-    },
-    {
-        id: 9,
-        websiteName: 'Bible Quiz Game',
-        websiteUrl: 'https://eudinson.github.io/Bible-Quiz-Game/',
-        img: imgs.bibleQuizGame,
-        technology: 'C#.Net winforms, SQLite Database',
-        description: 'Personal project. For Windows PC application only with installer ready. Bible quiz game for fun, testing, and learning. Trivias included.',
+        websiteName: 'Todo app',
+        websiteUrl: 'https://eudinson.github.io/todo-app-local-storage/',
+        img: imgs.todoApp,
+        technology: 'ReactJs',
+        description: 'Personal project. Simple todo app that saves on local storage.',
         integration: '',
         status: 'Completed'
     },
     {
+        id: 9,
+        websiteName: 'Bible Quick Search',
+        websiteUrl: 'https://eudinson.github.io/quick-search-bible/',
+        img: imgs.bibleQuickSearch,
+        technology: 'HTML, CSS, Javascript, REST Api',
+        description: 'Personal project. Simple web app for searching Bible passages.',
+        integration: '',
+        status: 'Under Development'
+    },
+    {
         id: 10,
+        websiteName: 'Bible Quiz Game',
+        websiteUrl: 'https://eudinson.github.io/Bible-Quiz-Game/',
+        img: imgs.bibleQuizGame,
+        technology: 'C#.Net winforms, SQLite Database',
+        description: 'Personal project. Bible quiz game with bunches of questions for fun, testing, and learning. Trivias included. For Windows PC application only with installer ready.',
+        integration: '',
+        status: 'Completed'
+    },
+    {
+        id: 11,
         websiteName: 'Single Face Detection App.',
         websiteUrl: 'https://awesome-face-detect-app.herokuapp.com/',
         img: imgs.faceDetectionApp,
@@ -124,5 +141,36 @@ export const projectsData = [
         description: 'Personal project. Single face detection app with username and password registration just for fun.',
         integration: 'Clarifai API',
         status: 'Completed'
-    }
+    },
+    {
+        id: 12,
+        websiteName: 'Financial Monitoring System',
+        websiteUrl: '',
+        img: imgs.financial,
+        technology: 'C#.Net Winforms, SQLite Database',
+        description: 'Personal project. Set budget, compare and monitor your daily, monthly, and yearly expenses.',
+        integration: '',
+        status: 'Completed'
+    },
+    {
+        id: 13,
+        websiteName: 'Hostel Management System',
+        websiteUrl: '',
+        img: imgs.hostel,
+        technology: 'C#.Net Winforms, SQLite Database',
+        description: `Personal project. Store records of clients that checked-in and checked-out with records of history.
+        Add events reminder like birthdays. Add, edit, delete, update client's personal information.`,
+        integration: '',
+        status: 'Completed'
+    },
+    {
+        id: 14,
+        websiteName: 'Employee Login System',
+        websiteUrl: '',
+        img: imgs.login,
+        technology: 'C#.Net Winforms, Entity Framework, SQLite Database',
+        description: 'Records the employee time-in and time-out for punctuality and attendance evaluation. Add, edit, delete, update employee details.',
+        integration: '',
+        status: 'Completed'
+    },
 ]

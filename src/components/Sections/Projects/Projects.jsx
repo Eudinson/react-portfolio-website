@@ -71,7 +71,9 @@ const Projects = () => {
                                 </div>
                                 <div className="projects-img-container">
                                     <Tilt className="tilt" options={{ max: 25, scale: 1 }} >
-                                        <img src={img} alt="project" className="project-img" />
+                                        <img src={img} alt="project" className="project-img" 
+                                        onContextMenu={(e) => e.preventDefault()}
+                                        onDragStart={(e) => e.preventDefault()}/>
                                     </Tilt>
                                 </div>
                             </div>
