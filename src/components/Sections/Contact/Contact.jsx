@@ -53,11 +53,8 @@ const Contact = () => {
         <div className='contact-container'>
 
             <h1 className="contact-heading" onAnimationEnd={animationDidEnd}>Contact</h1>
-            <p className={animationEnd ? "contact-content" : "hide contact-content"}>Need a Website for your business, Ecommerce, Hosting Services, Domain, SSL Certificate?</p>
 
-            <br />
-
-            <p className={animationEnd ? "contact-content" : "hide contact-content"} onTransitionEnd={transitionDidEnd}><b>Let's talk</b></p>
+            <p className={animationEnd ? "contact-content" : "hide contact-content"} onTransitionEnd={transitionDidEnd}><b>Need a web app? Let's talk...</b></p>
 
             <div className={transitionEnd ? "form-container" : "hide form-container"}>
 
@@ -78,7 +75,7 @@ const Contact = () => {
                    
                 </form>
 
-                <p className="contact-content"><b>Connect with me on:</b> 
+                <p className="contact-content"><b>Connect with me on</b> 
                 
                 <br />
                 

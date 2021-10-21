@@ -25,7 +25,7 @@ const Home = () => {
                 <h2 className="sub-heading-1" onAnimationEnd={animationDidEnd}>Hello World</h2>
                 <h1 className={animationEnd ? 'heading-1' : 'hide heading-1'} onTransitionEnd={transitionDidEnd}>I'm</h1>
                 <h1 className={transitionEnd ? 'heading-2' : 'hide heading-2'} onTransitionEnd={transitionDidEnd2}>Eudin</h1>
-                <h2 className={transitionEnd2 ? 'sub-heading-2' : 'hide sub-heading-2'}>I am a freelance web developer</h2>
+                <h2 className={transitionEnd2 ? 'sub-heading-2' : 'hide sub-heading-2'}>I am a full stack web app developer</h2>
             </div>
         </div>
     )

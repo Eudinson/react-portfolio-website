@@ -5,16 +5,16 @@ const About = () => {
 
     const companies = [
         {
+            companyName : 'F3 Offshore',
+            companyAddress : 'Dubai, UAE',
+            position : 'Full Stack Web Application Developer',
+            employmentDate : 'June 2021 – Current'
+        },
+        {
             companyName : 'Mittal Facility Management LLC',
             companyAddress : 'Dubai, UAE',
             position : 'Web Developer | IT Support',
             employmentDate : 'March 2019 - October 2020'
-        },
-        {
-            companyName : 'Driven Properties',
-            companyAddress : 'Dubai, UAE',
-            position : 'Administrative Assistant',
-            employmentDate : 'August 2017 – September 2018'
         },
         {
             companyName : 'Provincial Information and Communication Technology Office',
@@ -46,15 +46,30 @@ const About = () => {
             <h1 className="about-heading" onAnimationEnd={animationDidEnd}>About</h1>
 
             <p className={animationEnd ? "about-content" : "hide about-content"}>
-                I build dynamic and responsive websites that helps business grow their market profit online, create beautiful logos,
-                edit photos and videos, passionate in learning the latest technologies,
-                and loves drinking coffee ☕.</p>
+                I am a full stack web application developer.
+            </p>
+            <p className={animationEnd ? "about-content" : "hide about-content"}>
+                I build awesome web application.
+            </p>
+            <p className={animationEnd ? "about-content" : "hide about-content"}>
+                I can also create beautiful logos.
+            </p>
+            <p className={animationEnd ? "about-content" : "hide about-content"}>
+                I am passionate in learning new technologies.
+            </p>
+            <p className={animationEnd ? "about-content" : "hide about-content"}>
+                I love coffee ☕.
+            </p>
             <br />
 
             <p className={animationEnd ? "about-content" : "hide about-content"} 
             onTransitionEnd={transitionDidEnd}>
-                I've been freelancing since 2018 and I am always open to new opportunities.
-            </p>    
+                I am always open to new opportunities that will help me grow in my knowledge & skills.
+            </p>
+            <p className={animationEnd ? "about-content" : "hide about-content"} 
+            onTransitionEnd={transitionDidEnd}>
+                To GOD be the glory always!
+            </p>  
             
             <br />
 

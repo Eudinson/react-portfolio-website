@@ -9,7 +9,7 @@ const Skills = () => {
         setAnimationEnd(state => state = true)
     }
 
-    return(
+    return (
         <div className="skills-container">
 
             <h1 className="skills-heading" onAnimationEnd={animationDidEnd}>Knowledge & Skills</h1>
@@ -17,28 +17,19 @@ const Skills = () => {
 
             <div className={animationEnd ? "skills" : "hide skills"}>
 
-                <h2 className="skills-title">Front End</h2>
-                <p className="skills-content">ReactJs, HTML, CSS, Bootstrap, Scss, Javascript</p>
+                <h2 className="skills-title">Primary Skills</h2>
+                <p className="skills-content">ReactJs, Redux, NodeJs, ExpressJs, PostgreSQL</p>
+
+                {/* <p className="skills-content">ReactJs, HTML, CSS, Bootstrap, Scss, Javascript</p> */}
 
                 <br />
 
-                <h2 className="skills-title">Back End</h2>
-                <p className="skills-content">NodeJs, ExpressJs, C#, Php, SQL</p>
-                
-                <br />
-
-                <h2 className="skills-title">Database</h2>
-                <p className="skills-content">SQLite, SQL Server, MySQL, PostgreSQL, Firebase, MongoDB</p>
-
-                <br />
-
-                <h2 className="skills-title">Other Tech Skills</h2>
-                <p className="skills-content">RESTful API, Git, CMS WordPress, Web Hosting, Website Migration, WHM, Cpanel, SEO</p>
-
-                <br />
-
-                <h2 className="skills-title">Editing Skills</h2>
-                <p className="skills-content">Photoshop, Filmora, After Effect</p>
+                <h2 className="skills-title">Others</h2>
+                <p className="skills-content">RESTful API, Git, GitHub</p>
+                <p className="skills-content">Material UI, HTML, CSS, Bootstrap, Scss, Javascript</p>
+                <p className="skills-content">C#, SQL, SQLite, SQL Server, MySQL, Firebase</p>
+                <p className="skills-content">CMS WordPress, Web Hosting, Website Migration, Web Host Manager, Cpanel, SEO</p>
+                <p className="skills-content">Adobe Photoshop, Adobe After Effects, Filmora</p>
 
             </div>
 
