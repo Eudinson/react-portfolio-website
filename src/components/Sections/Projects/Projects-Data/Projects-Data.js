@@ -159,7 +159,7 @@ export const projectsData = [
         img: imgs.hostel,
         technology: 'C#.Net Winforms, SQLite Database',
         description: `Personal project. Store records of clients that checked-in and checked-out with records of history.
-        Add events reminder like birthdays. Add, edit, delete, update client's personal information.`,
+        Add events reminder like birthdays. Add, edit, delete, update client's personal information. `,
         integration: '',
         status: 'Completed'
     },
