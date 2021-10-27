@@ -25,11 +25,11 @@ export const projectsData = [
         websiteUrl: '',
         img: imgs.f3Offshore,
         technology: 'Material-UI, ReactJs, Redux, NodeJs, ExpressJs, PostgreSQL',
-        description: `Store, edit, update, delete, filter millions of vessel informations. 
+        description: `Store, edit, update, delete, filter of up to millions of vessel informations. 
         Data can be customized which one you want to be exported to PDF. 
         Multiple users can manipulate the data with live update. 
         Vessel short listing by user and more features.`,
-        integration: 'Cloudinary',
+        integration: 'Marine Traffic, Cloudinary',
         status: 'Under Development'
     },
     {
