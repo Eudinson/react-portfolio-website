@@ -42,7 +42,7 @@ const Contact = () => {
             e.target.reset()
 
         }).catch(error => {
-            error.text === "" && setStatus(message => message = "Oops something went wrong, check your network connection or try sending your message again later.")
+            error.text === '' && setStatus(message => message = "Oops something went wrong, check your network connection or try sending your message again later.")
         })
 
     }
